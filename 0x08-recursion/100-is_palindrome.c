@@ -10,10 +10,19 @@ int check_palindrome(char *s, int l, int r);
 int is_palindrome(char *s)
 {
 	int r = _strlen_recursion(s) - 1;
+
 	if (*s == '0')
 		return (1);
 	return (check_palindrome(s, 0, r));
 }
+/**
+ * check_palindrome - checks for palindrome nature
+ * @s: the word
+ * @l: left index
+ * @r: the right index
+ *
+ * Return: 0 or 1
+ */
 
 int check_palindrome(char *s, int l, int r)
 {
@@ -29,7 +38,12 @@ int check_palindrome(char *s, int l, int r)
 
 	return (0);
 }
-
+/**
+ * _strlen_recursion - calculate string length
+ * @s: string to find length for
+ *
+ * Return: string length
+ */
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
