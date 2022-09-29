@@ -14,7 +14,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * helper - checks for squareroot
+ *_helper - checks for squareroot
  * @a: guess number
  * @b: number to find square root for
  *
