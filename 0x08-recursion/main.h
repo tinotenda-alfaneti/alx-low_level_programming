@@ -13,5 +13,6 @@ int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int _helper(int a, int b);
 int is_prime_number(int n);
+int check_prime(int j, int i, int n);
 
 #endif /* MAIN_H */
