@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < 5; i++)
 		{
-			result += (num / cents[i]); 
+			result += (num / cents[i]);
 			num -= (num / cents[i]) * cents[i];
 
 			if (num < 0)
