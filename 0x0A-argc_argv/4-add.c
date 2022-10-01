@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 1, result = 0;
+	int j, i = 1, result = 0;
 
 	if (argc <= i)
 	{
@@ -22,17 +22,18 @@ int main(int argc, char *argv[])
 
 		for (i = 1; i < argc; i++)
 		{
-			if (isalpha(*argv[i]))
+			for (j = 0; argv[i][j]; j++)
 			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-			{
-				if (atoi(argv[i]) >= 0)
+				if (isalpha(argv[i][j]))
 				{
-					result += atoi(argv[i]);
+					printf("Error\n");
+					return (1);
 				}
+			}
+
+			if (atoi(argv[i]) >= 0)
+			{
+				result += atoi(argv[i]);
 			}
 		}
 
@@ -41,3 +42,4 @@ int main(int argc, char *argv[])
 	}
 
 }
+
