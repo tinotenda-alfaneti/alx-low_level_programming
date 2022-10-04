@@ -12,12 +12,19 @@ char *_strdup(char *str)
 	int len = 0, i;
 	char *ptr;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	while (str[len])
 	{
 		len++;
 	}
 
-	ptr = malloc((len - 1) * sizeof(char));
+	len++;
+
+	ptr = malloc(len * sizeof(char));
 	if (ptr == NULL)
 	{
 		return (NULL);
