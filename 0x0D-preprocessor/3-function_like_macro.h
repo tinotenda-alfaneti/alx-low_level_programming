@@ -1,11 +1,11 @@
-#ifndef FUNCTION_LIKE_MACRO_H
-#define FUNCTION_LIKE_MACRO_H
+#ifndef _HEADER_
+#define _HEADER_
 /**
  * ABS - calculate the absolute value
  * Desc: function that computes absolute value
  * @x: the value to be calculated
  */
 
-#define ABS(x) ((x) < 0 ? (-x) : (x))
+#define ABS(x) ((x) > 0 ? (x) : (-x))
 
 #endif /* FUNCTION_LIKE_MACRO_H */
